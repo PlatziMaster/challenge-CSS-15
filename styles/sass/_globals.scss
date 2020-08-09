@@ -1,7 +1,14 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700;900&display=swap");
+
+* {
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
   background-color: $body-bg;
   position: fixed;
 }
