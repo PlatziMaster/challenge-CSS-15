@@ -1,0 +1,17 @@
+body {
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $body-bg;
+  position: fixed;
+}
+
+.main__container {
+  height: 440px;
+  width: 700px;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  margin: 5% auto;
+  background-color: $primary-color;
+  border-radius: 15px;
+}

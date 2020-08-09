@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,IAAI,CAAC;EACH,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,CAAC;EACP,KAAK,EAAE,CAAC;EACR,gBAAgB,EDJR,OAAO;ECKf,QAAQ,EAAE,KAAK;CAChB;;AAED,AAAA,gBAAgB,CAAC;EACf,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,OAAO;EAC9B,MAAM,EAAE,OAAO;EACf,gBAAgB,EDbF,OAAO;ECcrB,aAAa,EAAE,IAAI;CACpB;;AChBD,AAAA,iBAAiB,CAAC;EAChB,WAAW,EAAE,CAAC;EACd,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;EACZ,gBAAgB,EFHA,OAAO;EEIvB,aAAa,EAAE,IAAI;CACpB",
+    "sources": [
+        "../sass/index.scss",
+        "../sass/_variables.scss",
+        "../sass/_globals.scss",
+        "../sass/_whiteBoard.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
