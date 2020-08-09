@@ -1,7 +1,13 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700;900&display=swap");
+* {
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
   background-color: #f6e3ff;
   position: fixed;
 }
@@ -26,5 +32,64 @@ body {
   margin: auto;
   background-color: #ffffff;
   border-radius: 12px;
+}
+
+.white__container nav {
+  margin-top: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8fr 2fr;
+      grid-template-columns: 8fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.white__container nav ul {
+  padding: 0;
+}
+
+.white__container nav li {
+  list-style-type: none;
+  float: left;
+  padding-right: 10px;
+}
+
+.white__container nav li h6 {
+  font-size: 8px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.white__container nav img {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.white-body {
+  margin: 15px 20px;
+}
+
+.white-body span {
+  height: 25px;
+  width: 25px;
+  font-size: 8px;
+  font-weight: 900;
+  border-radius: 50%;
+  background: #f8f7a9;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+h3 strong {
+  font-weight: 900;
 }
 /*# sourceMappingURL=index.css.map */
