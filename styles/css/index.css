@@ -1,0 +1,30 @@
+body {
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #f6e3ff;
+  position: fixed;
+}
+
+.main__container {
+  height: 440px;
+  width: 700px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55% 45%;
+      grid-template-columns: 55% 45%;
+  margin: 5% auto;
+  background-color: #5840bb;
+  border-radius: 15px;
+}
+
+.white__container {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  height: 97.3%;
+  width: 96%;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+/*# sourceMappingURL=index.css.map */
