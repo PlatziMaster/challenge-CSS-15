@@ -1,0 +1,178 @@
+main {
+  grid-column: 1 / 2;
+  display: grid;
+  box-sizing: border-box;
+  grid-template-rows: 41.3px repeat(6, auto);
+  grid-template-columns: 10% 90%;
+  column-gap: 20px;
+  height: 97.3%;
+  width: 96%;
+  padding: 15px 26px;
+  border-radius: 12px;
+  .dots {
+    place-self: center;
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    height: 18px;
+    width: 18px;
+    img {
+      width: 4px;
+    }
+    img:nth-child(1) {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    img:nth-child(2) {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    img:nth-child(3) {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    img:nth-child(4) {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+  }
+  h5 {
+    margin: 0;
+    font-weight: 900;
+    color: $tertiary-color;
+    align-self: center;
+  }
+  input {
+    margin-top: 60px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    grid-column: 2;
+    border: none;
+    background: transparent;
+    color: $tertiary-color;
+    &::placeholder {
+      color: #6953c1;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .items__container {
+    grid-column: 2;
+    height: 100px;
+    display: grid;
+    grid-template: 50% 50% / repeat(4, 50px) auto;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+}
+
+.items__container {
+  .p__cont {
+    display: grid;
+    place-self: start;
+    height: 100%;
+    width: 50px;
+    border-radius: 13px;
+    border: 1px ridge $tertiary-color;
+    p {
+      align-self: center;
+      text-align: center;
+      font-size: 7px;
+      color: $tertiary-color;
+    }
+  }
+  .avatar__img--1 {
+    grid-area: 2 / 1 / 3 / 2;
+    width: 50px;
+    background: url("../../assets/n_dormer.png") no-repeat;
+    border-radius: 13px;
+  }
+  .phrase__cont {
+    grid-area: 1 / 2 / 3 / 4;
+    background-color: $tertiary-color;
+    border-radius: 13px;
+    text-align: center;
+    img {
+      background: transparent;
+      justify-self: center;
+      width: 30px;
+    }
+  }
+  .avatar__img--2 {
+    grid-area: 1 / 4 / 2 / 5;
+    width: 50px;
+    background: url("../../assets/silent.png") no-repeat;
+    border-radius: 13px;
+  }
+  .meme__cont {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    border-radius: 13px;
+    background-color: $tertiary-color;
+    p {
+      align-self: center;
+      text-align: center;
+      font-size: 7px;
+      font-weight: 700;
+    }
+  }
+  .phrase__cont--1 {
+    grid-area: 1 / 2 / 3 / 4;
+    background-color: $tertiary-color;
+    border-radius: 13px;
+    text-align: center;
+    img {
+      background: transparent;
+      justify-self: center;
+      width: 30px;
+    }
+  }
+  .phrase__cont--2 {
+    width: 85%;
+    grid-area: 2 / 4 / 3 / 6;
+    background-color: #724fff;
+    border-radius: 13px;
+    img {
+      background: transparent;
+      justify-self: center;
+      width: 30px;
+    }
+  }
+}
+
+.phrase__cont--1 div {
+  margin: 15px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  pre {
+    grid-row: 2;
+    margin: 0;
+    align-self: end;
+    font-size: 7px;
+    font-weight: 700;
+    strong {
+      font-weight: 900;
+    }
+  }
+}
+
+.phrase__cont--2 div {
+  margin: 14px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  p {
+    margin: 0;
+    justify-self: start;
+    font-size: 14px;
+  }
+  pre {
+    grid-column: 2;
+    margin: 0;
+    font-size: 7px;
+    color: $tertiary-color;
+    font-weight: 700;
+    strong {
+      font-weight: 900;
+    }
+  }
+}
