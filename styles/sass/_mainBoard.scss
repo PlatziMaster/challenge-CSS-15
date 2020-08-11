@@ -2,12 +2,12 @@ main {
   grid-column: 1 / 2;
   display: grid;
   box-sizing: border-box;
-  grid-template-rows: 41.3px repeat(6, auto);
-  grid-template-columns: 10% 90%;
-  column-gap: 20px;
+  grid-template-rows: 41.3px repeat(2 auto);
+  grid-template-columns: 10% 285.83px 20px;
+  column-gap: 15px;
   height: 97.3%;
   width: 96%;
-  padding: 15px 26px;
+  padding: 28px 10px 0 26px;
   border-radius: 12px;
   .dots {
     place-self: center;
@@ -16,6 +16,8 @@ main {
     grid-template: 1fr 1fr / 1fr 1fr;
     height: 18px;
     width: 18px;
+    align-items: center;
+    justify-content: center;
     img {
       width: 4px;
     }
@@ -39,10 +41,11 @@ main {
     align-self: center;
   }
   input {
-    margin-top: 60px;
+    margin-top: 70px;
+    margin-bottom: 10px;
     height: 30px;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     grid-column: 2;
     border: none;
     background: transparent;
@@ -54,6 +57,31 @@ main {
       outline: none;
     }
   }
+  .scrollable {
+    grid-column: 2 / 3;
+    padding-right: 10px;
+    height: 60vh;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: max-content;
+    overflow: hidden scroll;
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 30px;
+      width: 1px;
+      height: 15px;
+      background: $tertiary-color;
+    }
+    .wrapper::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  }
+  overflow: hidden;
+}
+
+.scrollable {
   .items__container {
     grid-column: 2;
     height: 100px;
@@ -61,6 +89,42 @@ main {
     grid-template: 50% 50% / repeat(4, 50px) auto;
     column-gap: 5px;
     row-gap: 5px;
+  }
+  h3 {
+    grid-column: 2;
+    margin-top: 40px;
+    font-weight: 700;
+    color: $tertiary-color;
+  }
+  ul {
+    padding: 0;
+    margin: 0 0 15px 0;
+    grid-column: 2;
+    list-style-type: none;
+    li {
+      cursor: pointer;
+      font-size: 8px;
+      font-weight: 900;
+      float: left;
+      color: #7a66c8;
+      margin-right: 10px;
+    }
+    li:hover {
+      color: #f5f49f;
+    }
+  }
+  .main__carousel {
+    grid-column: 2;
+    height: 200vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    article {
+      height: 100px;
+      width: 80px;
+      background: url("../../assets/carousel_item.png") no-repeat;
+      border-radius: 13px;
+    }
   }
 }
 
